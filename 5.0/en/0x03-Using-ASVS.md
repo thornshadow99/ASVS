@@ -1,25 +1,25 @@
 # Using the Application Security Verification Standard (ASVS)
 
-As noted in the preface, the ASVS is a standard that defines the functional and non-functional security requirements for modern web applications and web services. It focuses on the security of an application's content. Refer to [OWASP SAMM](https://owaspsamm.org/) if you need information on secure development processes.
+As noted in the preface, the ASVS is a standard that defines the functional and non-functional security requirements for modern web applications and web services. It focuses on the security process for an application. Refer to [OWASP SAMM](https://owaspsamm.org/) if you need information on secure development processes.
 
-The ASVS should be useful to anyone trying to:
+The ASVS should be useful for anyone who is trying to:
 
-* Develop and maintain the content of secure applications.
-* Evaluate the security of content inside applications.
+* Develop and maintain a secure application.
+* Evaluate the security of an application.
 
 This chapter will provide an overview of how the ASVS should be employed, including coverage of its risk-based approach and different use cases for the ASVS.
 
-## Overview of ASVS Levels for Securing an Application's Content
+## Overview of ASVS Levels for Securing an Application
 
-The Application Security Verification Standard provides three verification levels for securing content and each level increases in sophistication and depth.
+The Application Security Verification Standard provides three verification levels for securing an application and each level increases in sophistication and depth.
 
-* ASVS Level 1 is for low assurance levels and is completely verifiable through penetration testing. (NOT RECOMMENDED)
+* ASVS Level 1 is for low assurance levels and is completely verifiable through penetration testing.
 * ASVS Level 2 is for applications that contain sensitive data, which requires protection and is the recommended level for most apps.
 * ASVS Level 3 is intended for the most critical applications, such as those handling high-value transactions, containing sensitive medical data, or any application that demands the highest level of trust.
 
 Each ASVS level contains a list of security requirements, and each of these requirements can be mapped to the security-specific features and capabilities that developers should add into their applications.
 
-### Why Application Security Should Not Be Based on ASVS Level 1 (Low Assurance Content) 
+### Why Application Security Should Not Be Based on ASVS Level 1 (Low Assurance) 
 
 Level 1 does not perform effective assurance activities and it should be actively discouraged, even though it is completely verifiable by penetration testing. Most penetration tests are over within a couple of weeks, but malicious attackers have a great deal of time. Defenders face limited resources and time to incorporate security controls, protect, find and resolve all weaknesses, then detect and respond to malicious actors. Black box testing, often performed at the end of development, quickly, or not at all, is completely unable to cope with this asymmetry, while malicious actors have essentially infinite time and only require a single porous defense, a single weakness, or missing detection to succeed. 
 
